@@ -174,6 +174,27 @@ export function letterNameToLetter(name: string): string | undefined {
   return NAME_TO_GLYPH.get(cleaned.toLowerCase())?.cluster[0].toLowerCase();
 }
 
+/**
+ * Return ALL lowercase Latin letters that share the same glyph as the given
+ * spoken letter name.  For unambiguous names this is a single-element array;
+ * for shared glyphs it returns every member of the cluster so the reverse
+ * translator can try all possible spellings.
+ *
+ * Examples:
+ *   "Veh"  → ["c", "k"]   (C and K share the Veh glyph)
+ *   "Gon"  → ["i", "y"]   (I and Y share the Gon glyph)
+ *   "Van"  → ["u", "v", "w"]
+ *   "Drux" → ["n"]
+ */
+export function letterNameCluster(name: string): string[] {
+  if (!name) return [];
+  const cleaned = name.replace(/[^A-Za-z]/g, "");
+  if (!cleaned) return [];
+  const g = NAME_TO_GLYPH.get(cleaned.toLowerCase());
+  if (!g) return [];
+  return g.cluster.map((l) => l.toLowerCase());
+}
+
 // ----------------------------------------------------------------
 // SVG rendering helpers
 // ----------------------------------------------------------------

@@ -1,313 +1,1342 @@
 {
-    "the voices": "bialo",
-    "are saying": "gohulim",
-    "to talk": "thil",
-    "to you": "nonci",
-    "i": "ol",
-    "am": "zir",
-    "the": "a",
-    "one": "l",
-    "who": "ds",
-    "which": "ds",
-    "god": "iad",
-    "sent": "drix",
-    "holy": "pir",
-    "angel": "g",
-    "righteous": "pii",
-    "angels": "c",
-    "behold": "micma",
-    "flame": "prge",
-    "creation": "qaa",
-    "eternal": "grosb",
-    "truth": "vooan",
-    "know": "om",
-    "law": "gohia",
-    "and": "od",
-    "of": "de",
-    "is": "i",
-    "are": "chis",
-    "in": "g",
-    "you": "ils",
-    "he": "tox",
-    "we": "ge",
-    "they": "z",
-    "my": "nanba",
-    "your": "gnonp",
-    "his": "toatar",
-    "our": "ge",
-    "them": "z",
-    "us": "ge",
-    "me": "ol",
-    "creature": "toman",
-    "creatures": "tomanon",
-    "creator": "qaal",
-    "lord": "aspt",
-    "god of stretch-forth": "iadnamad",
-    "highest god": "iaida",
-    "heaven": "piripsol",
-    "heavens": "piripsax",
-    "earth": "caosg",
-    "sun": "r\u83ef",
-    "moon": "graa",
-    "stars": "aoiveae",
-    "fire": "prge",
-    "water": "zong",
-    "air": "zong",
-    "wind": "ziren",
-    "sea": "zomd",
-    "blood": "cnila",
-    "spirit": "congamphlgh",
-    "spirits": "congamphlgh",
-    "throne": "adrpan",
-    "thrones": "adrpanon",
-    "kingdom": "adohi",
-    "kingdoms": "adchion",
-    "temple": "siaion",
-    "stone": "orri",
-    "rock": "orri",
-    "voice": "bia",
-    "word": "gohus",
-    "name": "dooain",
-    "names": "dooainu",
-    "power": "londoh",
-    "powers": "londohin",
-    "glory": "busd",
-    "justice": "paradiz",
-    "mercy": "iehusoz",
-    "understanding": "oma",
-    "wisdom": "sapah",
-    "love": "olar",
-    "will": "gemin",
-    "judgment": "aladi",
-    "wrath": "vonsarg",
-    "time": "capimao",
-    "times": "capimaon",
-    "beginning": "acroodzi",
-    "end": "carba",
-    "place": "noncp",
-    "places": "noncf",
-    "house": "salman",
-    "number": "cormpo",
-    "light": "luciftias",
-    "darkness": "ors",
-    "sin": "doalim",
-    "death": "chia",
-    "life": "homil",
-    "strength": "umuplh",
-    "beauty": "virg",
-    "praise": "ecrin",
-    "covenant": "sibsi",
-    "say": "gohu",
-    "speak": "camliax",
-    "saying": "gohulim",
-    "said": "gohas",
-    "make": "oln",
-    "made": "oln",
-    "create": "qaa",
-    "created": "qaal",
-    "see": "torzu",
-    "look": "micma",
-    "hear": "trian",
-    "come": "niiso",
-    "go": "zacam",
-    "move": "zacar",
-    "stand": "torzu",
-    "visit": "trian",
-    "rejoice": "chirlan",
-    "rule": "bogpa",
-    "bind": "all",
-    "open": "odo",
-    "close": "holq",
-    "destroy": "quasb",
-    "bring down": "drix",
-    "gather": "comselha",
-    "dwell": "faorgt",
-    "deliver": "pila",
-    "give": "dluga",
-    "given": "dlugam",
-    "show": "odzo",
-    "measure": "noas",
-    "become": "noan",
-    "execute": "marb",
-    "worship": "boan",
-    "obey": "darbs",
-    "prepare": "abramg",
-    " reign": "sonf",
-    "reign": "sonf",
-    "flaming": "taran",
-    "shine": "loholo",
-    "great": "drilpa",
-    "mighty": "micalzo",
-    "true": "vooan",
-    "secret": "la",
-    "second": "viv",
-    "third": "d",
-    "fourth": "s",
-    "fifth": "o",
-    "sixth": "n",
-    "seventh": "q",
-    "first": "elo",
-    "all": "sg",
-    "every": "saga",
-    "no": "ag",
-    "not": "ip",
-    "bitter": "vonph",
-    "sharp": "vonph",
-    "roaring": "moldo",
-    "strong": "gican",
-    "unsearchable": "comselha",
-    "miserable": "noalmr",
-    "blind": "moooah",
-    "with": "c",
-    "as": "ca",
-    "but": "cr",
-    "for": "lap",
-    "if": "q",
-    "or": "q",
-    "because": "lap",
-    "without": "drilpi",
-    "where": "ds",
-    "why": "b",
-    "unto": "p",
-    "to": "p",
-    "upon": "m",
-    "on": "m",
-    "above": "aspt",
-    "under": "oroch",
-    "below": "oroch",
-    "from": "he",
-    "out of": "he",
-    "into": "g",
-    "here": "f",
-    "there": "ti",
-    "ah": "vpaah",
-    "always": "saga",
-    "apparel": "limlal",
-    "ark": "edmial",
-    "arrow": "malprg",
-    "authority": "phama",
-    "balance": "orri",
-    "beastus": "niis",
-    "bed": "totonot",
-    "branches": "sor",
-    "bright": "luciftias",
-    "brightness": "luciftian",
-    "brother": "esiasch",
-    "brothers": "esiasch",
-    "cage": "ovcho",
-    "candle": "hubar",
-    "cave": "farzm",
-    "chair": "throne",
-    "circle": "comselha",
-    "clothing": "limlal",
-    "comfort": "bliard",
-    "comforter": "bliard",
-    "conclude": "marb",
-    "course": "elzapt",
-    "courses": "elzapt",
-    "daughter": "pasbs",
-    "daughters": "pasbs",
-    "deliverance": "pila",
-    "depth": "pilzin",
-    "diamond": "orri",
-    "divide": "poamal",
-    "divided": "poamal",
-    "division": "poamal",
-    "drank": "sn",
-    "dwellers": "faorgt",
-    "dwelling": "faorgt",
-    "east": "raas",
-    "echo": "moldo",
-    "empty": "vonph",
-    "entered": "g",
-    "envenomed": "vonph",
-    "exalt": "aspt",
-    "feet": "lusdan",
-    "garment": "limlal",
-    "girdle": "tlb",
-    "govern": "bogpa",
-    "groan": "moldo",
-    "half": "obza",
-    "hands": "ozien",
-    "harvest": "baouis",
-    "head": "daziz",
-    "heads": "daziz",
-    "heart": "rit",
-    "honor": "busd",
-    "hyacinth": "pauox",
-    "increase": "coazior",
-    "inhabitants": "faorgt",
-    "innocent": "blans",
-    "judgment seat": "aladi",
-    "knowledge": "om",
-    "lanterns": "hubar",
-    "loins": "tlb",
-    "many": "drilpa",
-    "marble": "orri",
-    "matrix": "edmial",
-    "midst": "nothoa",
-    "minister": "carma",
-    "moss": "pila",
-    "mother": "madimi",
-    "mountains": "adrpan",
-    "mouth": "butmon",
-    "numbers": "cormpo",
-    "oak": "paome",
-    "olive": "pila",
-    "part": "obza",
-    "people": "els",
-    "perfume": "prge",
-    "pillars": "nazarth",
-    "plants": "sor",
-    "pour": "var",
-    "praises": "ecrin",
-    "province": "vonph",
-    "provinces": "vonph",
-    "purpose": "marb",
-    "raise": "torzu",
-    "raised": "torzu",
-    "remain": "faorgt",
-    "remnant": "obza",
-    "repent": "moooah",
-    "saith": "gohu",
-    "scourge": "vonph",
-    "seats": "adrpan",
-    "shaking": "zacar",
-    "shew": "odzo",
-    "sink": "drix",
-    "skies": "piripsol",
-    "sleeve": "limlal",
-    "smoke": "vonsarg",
-    "south": "babage",
-    "steward": "carma",
-    "sting": "vonph",
-    "stones": "orri",
-    "stranger": "g",
-    "strangers": "g",
-    "sulfur": "salbrox",
-    "swear": "surzas",
-    "sword": "napta",
-    "swords": "napta",
-    "tartar": "salbrox",
-    "teeth": "vgeg",
-    "theirs": "toatar",
-    "thunders": "coronzon",
-    "underneath": "oroch",
-    "vessels": "edmial",
-    "vial": "edmial",
-    "voices": "bialo",
-    "vow": "surzas",
-    "walk": "lusdan",
-    "wall": "nazarth",
-    "west": "sobol",
-    "window": "hubar",
-    "wine": "sn",
-    "winds": "ziren",
-    "woe": "vonph",
-    "wonders": "micalzo",
-    "work": "marb",
-    "worms": "toman",
-    "worshippers": "boan",
-    "yoke": "tlb",
-    "yourselves": "ils"
+    "the voices": {
+        "enochian": "bialo",
+        "pronunciation": "bee-AH-loh"
+    },
+    "are saying": {
+        "enochian": "gohulim",
+        "pronunciation": "go-HOO-leem"
+    },
+    "to talk": {
+        "enochian": "thil",
+        "pronunciation": "theel"
+    },
+    "to you": {
+        "enochian": "nonci",
+        "pronunciation": "NOHN-see"
+    },
+    "i": {
+        "enochian": "ol",
+        "pronunciation": "ohl"
+    },
+    "am": {
+        "enochian": "zir",
+        "pronunciation": "zeer"
+    },
+    "the": {
+        "enochian": "a",
+        "pronunciation": "ah"
+    },
+    "one": {
+        "enochian": "l",
+        "pronunciation": "el"
+    },
+    "who": {
+        "enochian": "ds",
+        "pronunciation": "dess"
+    },
+    "which": {
+        "enochian": "ds",
+        "pronunciation": "dess"
+    },
+    "god": {
+        "enochian": "iad",
+        "pronunciation": "EE-ahd"
+    },
+    "sent": {
+        "enochian": "drix",
+        "pronunciation": "dreeks"
+    },
+    "holy": {
+        "enochian": "pir",
+        "pronunciation": "peer"
+    },
+    "angel": {
+        "enochian": "g",
+        "pronunciation": "gee"
+    },
+    "righteous": {
+        "enochian": "pii",
+        "pronunciation": "PEE-ee"
+    },
+    "angels": {
+        "enochian": "c",
+        "pronunciation": "see"
+    },
+    "behold": {
+        "enochian": "micma",
+        "pronunciation": "MEEK-mah"
+    },
+    "flame": {
+        "enochian": "prge",
+        "pronunciation": "PAR-jeh"
+    },
+    "creation": {
+        "enochian": "qaa",
+        "pronunciation": "KWAH-ah"
+    },
+    "eternal": {
+        "enochian": "grosb",
+        "pronunciation": "GROHS-beh"
+    },
+    "truth": {
+        "enochian": "vooan",
+        "pronunciation": "voh-OH-ahn"
+    },
+    "know": {
+        "enochian": "om",
+        "pronunciation": "ohm"
+    },
+    "law": {
+        "enochian": "gohia",
+        "pronunciation": "go-HEE-ah"
+    },
+    "and": {
+        "enochian": "od",
+        "pronunciation": "ohd"
+    },
+    "of": {
+        "enochian": "de",
+        "pronunciation": "deh"
+    },
+    "is": {
+        "enochian": "i",
+        "pronunciation": "ee"
+    },
+    "are": {
+        "enochian": "chis",
+        "pronunciation": "kees"
+    },
+    "in": {
+        "enochian": "g",
+        "pronunciation": "gee"
+    },
+    "you": {
+        "enochian": "ils",
+        "pronunciation": "eels"
+    },
+    "he": {
+        "enochian": "tox",
+        "pronunciation": "tohks"
+    },
+    "we": {
+        "enochian": "ge",
+        "pronunciation": "jeh"
+    },
+    "they": {
+        "enochian": "z",
+        "pronunciation": "zod"
+    },
+    "my": {
+        "enochian": "nanba",
+        "pronunciation": "NAHN-bah"
+    },
+    "your": {
+        "enochian": "gnonp",
+        "pronunciation": "geh-NOHN-peh"
+    },
+    "his": {
+        "enochian": "toatar",
+        "pronunciation": "toh-AH-tahr"
+    },
+    "our": {
+        "enochian": "ge",
+        "pronunciation": "jeh"
+    },
+    "them": {
+        "enochian": "z",
+        "pronunciation": "zod"
+    },
+    "us": {
+        "enochian": "ge",
+        "pronunciation": "jeh"
+    },
+    "me": {
+        "enochian": "ol",
+        "pronunciation": "ohl"
+    },
+    "creature": {
+        "enochian": "toman",
+        "pronunciation": "TOH-mahn"
+    },
+    "creatures": {
+        "enochian": "tomanon",
+        "pronunciation": "toh-MAHN-ohn"
+    },
+    "creator": {
+        "enochian": "qaal",
+        "pronunciation": "KWAH-ahl"
+    },
+    "lord": {
+        "enochian": "aspt",
+        "pronunciation": "AH-spet"
+    },
+    "god of stretch-forth": {
+        "enochian": "iadnamad",
+        "pronunciation": "ee-AHD-nah-mahd"
+    },
+    "highest god": {
+        "enochian": "iaida",
+        "pronunciation": "ee-ah-EE-dah"
+    },
+    "heaven": {
+        "enochian": "piripsol",
+        "pronunciation": "pee-REEP-sohl"
+    },
+    "heavens": {
+        "enochian": "piripsax",
+        "pronunciation": "pee-REEP-sahks"
+    },
+    "earth": {
+        "enochian": "caosg",
+        "pronunciation": "kah-OHS-gee"
+    },
+    "sun": {
+        "enochian": "ror",
+        "pronunciation": "rohr"
+    },
+    "moon": {
+        "enochian": "graa",
+        "pronunciation": "GRAH-ah"
+    },
+    "stars": {
+        "enochian": "aoiveae",
+        "pronunciation": "ah-oh-EE-veh-ah-eh"
+    },
+    "fire": {
+        "enochian": "prge",
+        "pronunciation": "PAR-jeh"
+    },
+    "water": {
+        "enochian": "zong",
+        "pronunciation": "zohng"
+    },
+    "air": {
+        "enochian": "zong",
+        "pronunciation": "zohng"
+    },
+    "wind": {
+        "enochian": "ziren",
+        "pronunciation": "zee-REN"
+    },
+    "sea": {
+        "enochian": "zomd",
+        "pronunciation": "zohmd"
+    },
+    "blood": {
+        "enochian": "cnila",
+        "pronunciation": "kuh-NEE-lah"
+    },
+    "spirit": {
+        "enochian": "congamphlgh",
+        "pronunciation": "kohn-GAHM-fahl-gee"
+    },
+    "spirits": {
+        "enochian": "congamphlgh",
+        "pronunciation": "kohn-GAHM-fahl-gee"
+    },
+    "throne": {
+        "enochian": "adrpan",
+        "pronunciation": "ah-DER-pahn"
+    },
+    "thrones": {
+        "enochian": "adrpanon",
+        "pronunciation": "ah-DER-pahn-ohn"
+    },
+    "kingdom": {
+        "enochian": "adohi",
+        "pronunciation": "ah-DOH-hee"
+    },
+    "kingdoms": {
+        "enochian": "adchion",
+        "pronunciation": "ah-deh-KEE-ohn"
+    },
+    "temple": {
+        "enochian": "siaion",
+        "pronunciation": "see-AH-ee-ohn"
+    },
+    "stone": {
+        "enochian": "orri",
+        "pronunciation": "OH-ree"
+    },
+    "rock": {
+        "enochian": "orri",
+        "pronunciation": "OH-ree"
+    },
+    "voice": {
+        "enochian": "bia",
+        "pronunciation": "BEE-ah"
+    },
+    "word": {
+        "enochian": "gohus",
+        "pronunciation": "GO-hoos"
+    },
+    "name": {
+        "enochian": "dooain",
+        "pronunciation": "doh-OH-ah-een"
+    },
+    "names": {
+        "enochian": "dooainu",
+        "pronunciation": "doh-OH-ah-ee-noo"
+    },
+    "power": {
+        "enochian": "londoh",
+        "pronunciation": "LOHN-doh"
+    },
+    "powers": {
+        "enochian": "londohin",
+        "pronunciation": "LOHN-doh-heen"
+    },
+    "glory": {
+        "enochian": "busd",
+        "pronunciation": "boosd"
+    },
+    "justice": {
+        "enochian": "paradiz",
+        "pronunciation": "pah-RAH-deez"
+    },
+    "mercy": {
+        "enochian": "iehusoz",
+        "pronunciation": "ee-eh-HOO-sohz"
+    },
+    "understanding": {
+        "enochian": "oma",
+        "pronunciation": "OH-mah"
+    },
+    "wisdom": {
+        "enochian": "sapah",
+        "pronunciation": "SAH-pah"
+    },
+    "love": {
+        "enochian": "olar",
+        "pronunciation": "OH-lahr"
+    },
+    "will": {
+        "enochian": "gemin",
+        "pronunciation": "JEH-meen"
+    },
+    "judgment": {
+        "enochian": "aladi",
+        "pronunciation": "ah-LAH-dee"
+    },
+    "wrath": {
+        "enochian": "vonsarg",
+        "pronunciation": "vohn-SAHRG"
+    },
+    "time": {
+        "enochian": "capimao",
+        "pronunciation": "kah-pee-MAH-oh"
+    },
+    "times": {
+        "enochian": "capimaon",
+        "pronunciation": "kah-pee-MAH-ohn"
+    },
+    "beginning": {
+        "enochian": "acroodzi",
+        "pronunciation": "ah-kroh-OHD-zee"
+    },
+    "end": {
+        "enochian": "carba",
+        "pronunciation": "KAHR-bah"
+    },
+    "place": {
+        "enochian": "noncp",
+        "pronunciation": "NOHN-sep"
+    },
+    "places": {
+        "enochian": "noncf",
+        "pronunciation": "NOHN-sef"
+    },
+    "house": {
+        "enochian": "salman",
+        "pronunciation": "SAHL-mahn"
+    },
+    "number": {
+        "enochian": "cormpo",
+        "pronunciation": "KOHRM-poh"
+    },
+    "light": {
+        "enochian": "luciftias",
+        "pronunciation": "loo-SEEF-tee-ahs"
+    },
+    "darkness": {
+        "enochian": "ors",
+        "pronunciation": "ohrs"
+    },
+    "sin": {
+        "enochian": "doalim",
+        "pronunciation": "doh-AH-leem"
+    },
+    "death": {
+        "enochian": "chia",
+        "pronunciation": "KEE-ah"
+    },
+    "life": {
+        "enochian": "homil",
+        "pronunciation": "HOH-meel"
+    },
+    "strength": {
+        "enochian": "umuplh",
+        "pronunciation": "oo-MOO-peh-leh"
+    },
+    "beauty": {
+        "enochian": "virg",
+        "pronunciation": "veerg"
+    },
+    "praise": {
+        "enochian": "ecrin",
+        "pronunciation": "EH-kreen"
+    },
+    "covenant": {
+        "enochian": "sibsi",
+        "pronunciation": "SEEB-see"
+    },
+    "say": {
+        "enochian": "gohu",
+        "pronunciation": "GO-hoo"
+    },
+    "speak": {
+        "enochian": "camliax",
+        "pronunciation": "kahm-LEE-ahks"
+    },
+    "saying": {
+        "enochian": "gohulim",
+        "pronunciation": "go-HOO-leem"
+    },
+    "said": {
+        "enochian": "gohas",
+        "pronunciation": "GO-hahs"
+    },
+    "make": {
+        "enochian": "oln",
+        "pronunciation": "ohln"
+    },
+    "made": {
+        "enochian": "oln",
+        "pronunciation": "ohln"
+    },
+    "create": {
+        "enochian": "qaa",
+        "pronunciation": "KWAH-ah"
+    },
+    "created": {
+        "enochian": "qaal",
+        "pronunciation": "KWAH-ahl"
+    },
+    "see": {
+        "enochian": "torzu",
+        "pronunciation": "TOHR-zoo"
+    },
+    "look": {
+        "enochian": "micma",
+        "pronunciation": "MEEK-mah"
+    },
+    "hear": {
+        "enochian": "trian",
+        "pronunciation": "TREE-ahn"
+    },
+    "come": {
+        "enochian": "niiso",
+        "pronunciation": "nee-EE-soh"
+    },
+    "go": {
+        "enochian": "zacam",
+        "pronunciation": "ZAH-kahm"
+    },
+    "move": {
+        "enochian": "zacar",
+        "pronunciation": "ZAH-kahr"
+    },
+    "stand": {
+        "enochian": "torzu",
+        "pronunciation": "TOHR-zoo"
+    },
+    "visit": {
+        "enochian": "trian",
+        "pronunciation": "TREE-ahn"
+    },
+    "rejoice": {
+        "enochian": "chirlan",
+        "pronunciation": "KEER-lahn"
+    },
+    "rule": {
+        "enochian": "bogpa",
+        "pronunciation": "BOHG-pah"
+    },
+    "bind": {
+        "enochian": "all",
+        "pronunciation": "ahl"
+    },
+    "open": {
+        "enochian": "odo",
+        "pronunciation": "OH-doh"
+    },
+    "close": {
+        "enochian": "holq",
+        "pronunciation": "hohl-kwuh"
+    },
+    "destroy": {
+        "enochian": "quasb",
+        "pronunciation": "KWAHS-beh"
+    },
+    "bring down": {
+        "enochian": "drix",
+        "pronunciation": "dreeks"
+    },
+    "gather": {
+        "enochian": "comselha",
+        "pronunciation": "kohm-SEL-hah"
+    },
+    "dwell": {
+        "enochian": "faorgt",
+        "pronunciation": "fah-OHR-get"
+    },
+    "deliver": {
+        "enochian": "pila",
+        "pronunciation": "PEE-lah"
+    },
+    "give": {
+        "enochian": "dluga",
+        "pronunciation": "deh-LOO-gah"
+    },
+    "given": {
+        "enochian": "dlugam",
+        "pronunciation": "deh-LOO-gahm"
+    },
+    "show": {
+        "enochian": "odzo",
+        "pronunciation": "OHD-zoh"
+    },
+    "measure": {
+        "enochian": "noas",
+        "pronunciation": "NOH-ahs"
+    },
+    "become": {
+        "enochian": "noan",
+        "pronunciation": "NOH-ahn"
+    },
+    "execute": {
+        "enochian": "marb",
+        "pronunciation": "mahrb"
+    },
+    "worship": {
+        "enochian": "boan",
+        "pronunciation": "BOH-ahn"
+    },
+    "obey": {
+        "enochian": "darbs",
+        "pronunciation": "dahrbs"
+    },
+    "prepare": {
+        "enochian": "abramg",
+        "pronunciation": "ah-BRAHMG"
+    },
+    " reign": {
+        "enochian": "sonf",
+        "pronunciation": "sohnf"
+    },
+    "reign": {
+        "enochian": "sonf",
+        "pronunciation": "sohnf"
+    },
+    "flaming": {
+        "enochian": "taran",
+        "pronunciation": "TAH-rahn"
+    },
+    "shine": {
+        "enochian": "loholo",
+        "pronunciation": "loh-HOH-loh"
+    },
+    "great": {
+        "enochian": "drilpa",
+        "pronunciation": "DREEL-pah"
+    },
+    "mighty": {
+        "enochian": "micalzo",
+        "pronunciation": "mee-KAHL-zoh"
+    },
+    "true": {
+        "enochian": "vooan",
+        "pronunciation": "voh-OH-ahn"
+    },
+    "secret": {
+        "enochian": "la",
+        "pronunciation": "lah"
+    },
+    "second": {
+        "enochian": "viv",
+        "pronunciation": "veev"
+    },
+    "third": {
+        "enochian": "d",
+        "pronunciation": "dee"
+    },
+    "fourth": {
+        "enochian": "s",
+        "pronunciation": "ess"
+    },
+    "fifth": {
+        "enochian": "o",
+        "pronunciation": "oh"
+    },
+    "sixth": {
+        "enochian": "n",
+        "pronunciation": "en"
+    },
+    "seventh": {
+        "enochian": "q",
+        "pronunciation": "kyoo"
+    },
+    "first": {
+        "enochian": "elo",
+        "pronunciation": "EH-loh"
+    },
+    "all": {
+        "enochian": "sg",
+        "pronunciation": "seg"
+    },
+    "every": {
+        "enochian": "saga",
+        "pronunciation": "SAH-gah"
+    },
+    "no": {
+        "enochian": "ag",
+        "pronunciation": "ahg"
+    },
+    "not": {
+        "enochian": "ip",
+        "pronunciation": "eep"
+    },
+    "bitter": {
+        "enochian": "vonph",
+        "pronunciation": "vohnf"
+    },
+    "sharp": {
+        "enochian": "vonph",
+        "pronunciation": "vohnf"
+    },
+    "roaring": {
+        "enochian": "moldo",
+        "pronunciation": "MOHL-doh"
+    },
+    "strong": {
+        "enochian": "gican",
+        "pronunciation": "JEE-kahn"
+    },
+    "unsearchable": {
+        "enochian": "comselha",
+        "pronunciation": "kohm-SEL-hah"
+    },
+    "miserable": {
+        "enochian": "noalmr",
+        "pronunciation": "noh-AHL-mer"
+    },
+    "blind": {
+        "enochian": "moooah",
+        "pronunciation": "moh-OH-oh-ah"
+    },
+    "with": {
+        "enochian": "c",
+        "pronunciation": "see"
+    },
+    "as": {
+        "enochian": "ca",
+        "pronunciation": "kah"
+    },
+    "but": {
+        "enochian": "cr",
+        "pronunciation": "krah"
+    },
+    "for": {
+        "enochian": "lap",
+        "pronunciation": "lahp"
+    },
+    "if": {
+        "enochian": "q",
+        "pronunciation": "kyoo"
+    },
+    "or": {
+        "enochian": "q",
+        "pronunciation": "kyoo"
+    },
+    "because": {
+        "enochian": "lap",
+        "pronunciation": "lahp"
+    },
+    "without": {
+        "enochian": "drilpi",
+        "pronunciation": "DREEL-pee"
+    },
+    "where": {
+        "enochian": "ds",
+        "pronunciation": "dess"
+    },
+    "why": {
+        "enochian": "b",
+        "pronunciation": "bee"
+    },
+    "unto": {
+        "enochian": "p",
+        "pronunciation": "peh"
+    },
+    "to": {
+        "enochian": "p",
+        "pronunciation": "peh"
+    },
+    "upon": {
+        "enochian": "m",
+        "pronunciation": "em"
+    },
+    "on": {
+        "enochian": "m",
+        "pronunciation": "em"
+    },
+    "above": {
+        "enochian": "aspt",
+        "pronunciation": "AH-spet"
+    },
+    "under": {
+        "enochian": "oroch",
+        "pronunciation": "OH-rohk"
+    },
+    "below": {
+        "enochian": "oroch",
+        "pronunciation": "OH-rohk"
+    },
+    "from": {
+        "enochian": "he",
+        "pronunciation": "heh"
+    },
+    "out of": {
+        "enochian": "he",
+        "pronunciation": "heh"
+    },
+    "into": {
+        "enochian": "g",
+        "pronunciation": "gee"
+    },
+    "here": {
+        "enochian": "f",
+        "pronunciation": "ef"
+    },
+    "there": {
+        "enochian": "ti",
+        "pronunciation": "tee"
+    },
+    "ah": {
+        "enochian": "vpaah",
+        "pronunciation": "vuh-PAH-ah"
+    },
+    "always": {
+        "enochian": "saga",
+        "pronunciation": "SAH-gah"
+    },
+    "apparel": {
+        "enochian": "limlal",
+        "pronunciation": "LEEM-lahl"
+    },
+    "ark": {
+        "enochian": "edmial",
+        "pronunciation": "ehd-MEE-ahl"
+    },
+    "arrow": {
+        "enochian": "malprg",
+        "pronunciation": "MAHL-perg"
+    },
+    "authority": {
+        "enochian": "phama",
+        "pronunciation": "FAH-mah"
+    },
+    "balance": {
+        "enochian": "orri",
+        "pronunciation": "OH-ree"
+    },
+    "beastus": {
+        "enochian": "niis",
+        "pronunciation": "nee-EES"
+    },
+    "bed": {
+        "enochian": "totonot",
+        "pronunciation": "toh-TOH-noht"
+    },
+    "branches": {
+        "enochian": "sor",
+        "pronunciation": "sohr"
+    },
+    "bright": {
+        "enochian": "luciftias",
+        "pronunciation": "loo-SEEF-tee-ahs"
+    },
+    "brightness": {
+        "enochian": "luciftian",
+        "pronunciation": "loo-SEEF-tee-ahn"
+    },
+    "brother": {
+        "enochian": "esiasch",
+        "pronunciation": "eh-SEE-ahsk"
+    },
+    "brothers": {
+        "enochian": "esiasch",
+        "pronunciation": "eh-SEE-ahsk"
+    },
+    "cage": {
+        "enochian": "ovcho",
+        "pronunciation": "OHV-koh"
+    },
+    "candle": {
+        "enochian": "hubar",
+        "pronunciation": "HOO-bahr"
+    },
+    "cave": {
+        "enochian": "farzm",
+        "pronunciation": "FAHR-zem"
+    },
+    "chair": {
+        "enochian": "throne",
+        "pronunciation": "throhn"
+    },
+    "circle": {
+        "enochian": "comselha",
+        "pronunciation": "kohm-SEL-hah"
+    },
+    "clothing": {
+        "enochian": "limlal",
+        "pronunciation": "LEEM-lahl"
+    },
+    "comfort": {
+        "enochian": "bliard",
+        "pronunciation": "BLEE-ahrd"
+    },
+    "comforter": {
+        "enochian": "bliard",
+        "pronunciation": "BLEE-ahrd"
+    },
+    "conclude": {
+        "enochian": "marb",
+        "pronunciation": "mahrb"
+    },
+    "course": {
+        "enochian": "elzapt",
+        "pronunciation": "el-ZAHP-teh"
+    },
+    "courses": {
+        "enochian": "elzapt",
+        "pronunciation": "el-ZAHP-teh"
+    },
+    "daughter": {
+        "enochian": "pasbs",
+        "pronunciation": "PAHS-bes"
+    },
+    "daughters": {
+        "enochian": "pasbs",
+        "pronunciation": "PAHS-bes"
+    },
+    "deliverance": {
+        "enochian": "pila",
+        "pronunciation": "PEE-lah"
+    },
+    "depth": {
+        "enochian": "pilzin",
+        "pronunciation": "PEEL-zeen"
+    },
+    "diamond": {
+        "enochian": "orri",
+        "pronunciation": "OH-ree"
+    },
+    "divide": {
+        "enochian": "poamal",
+        "pronunciation": "poh-AH-mahl"
+    },
+    "divided": {
+        "enochian": "poamal",
+        "pronunciation": "poh-AH-mahl"
+    },
+    "division": {
+        "enochian": "poamal",
+        "pronunciation": "poh-AH-mahl"
+    },
+    "drank": {
+        "enochian": "sn",
+        "pronunciation": "sen"
+    },
+    "dwellers": {
+        "enochian": "faorgt",
+        "pronunciation": "fah-OHR-get"
+    },
+    "dwelling": {
+        "enochian": "faorgt",
+        "pronunciation": "fah-OHR-get"
+    },
+    "east": {
+        "enochian": "raas",
+        "pronunciation": "rah-AHS"
+    },
+    "echo": {
+        "enochian": "moldo",
+        "pronunciation": "MOHL-doh"
+    },
+    "empty": {
+        "enochian": "vonph",
+        "pronunciation": "vohnf"
+    },
+    "entered": {
+        "enochian": "g",
+        "pronunciation": "gee"
+    },
+    "envenomed": {
+        "enochian": "vonph",
+        "pronunciation": "vohnf"
+    },
+    "exalt": {
+        "enochian": "aspt",
+        "pronunciation": "AH-spet"
+    },
+    "feet": {
+        "enochian": "lusdan",
+        "pronunciation": "LOOS-dahn"
+    },
+    "garment": {
+        "enochian": "limlal",
+        "pronunciation": "LEEM-lahl"
+    },
+    "girdle": {
+        "enochian": "tlb",
+        "pronunciation": "telb"
+    },
+    "govern": {
+        "enochian": "bogpa",
+        "pronunciation": "BOHG-pah"
+    },
+    "groan": {
+        "enochian": "moldo",
+        "pronunciation": "MOHL-doh"
+    },
+    "half": {
+        "enochian": "obza",
+        "pronunciation": "OHB-zah"
+    },
+    "hands": {
+        "enochian": "ozien",
+        "pronunciation": "oh-ZEE-en"
+    },
+    "harvest": {
+        "enochian": "baouis",
+        "pronunciation": "bah-OH-oo-ees"
+    },
+    "head": {
+        "enochian": "daziz",
+        "pronunciation": "DAH-zeez"
+    },
+    "heads": {
+        "enochian": "daziz",
+        "pronunciation": "DAH-zeez"
+    },
+    "heart": {
+        "enochian": "rit",
+        "pronunciation": "reet"
+    },
+    "honor": {
+        "enochian": "busd",
+        "pronunciation": "boosd"
+    },
+    "hyacinth": {
+        "enochian": "pauox",
+        "pronunciation": "pah-OO-ohks"
+    },
+    "increase": {
+        "enochian": "coazior",
+        "pronunciation": "koh-AH-zee-ohr"
+    },
+    "inhabitants": {
+        "enochian": "faorgt",
+        "pronunciation": "fah-OHR-get"
+    },
+    "innocent": {
+        "enochian": "blans",
+        "pronunciation": "blahns"
+    },
+    "judgment seat": {
+        "enochian": "aladi",
+        "pronunciation": "ah-LAH-dee"
+    },
+    "knowledge": {
+        "enochian": "om",
+        "pronunciation": "ohm"
+    },
+    "lanterns": {
+        "enochian": "hubar",
+        "pronunciation": "HOO-bahr"
+    },
+    "loins": {
+        "enochian": "tlb",
+        "pronunciation": "telb"
+    },
+    "many": {
+        "enochian": "drilpa",
+        "pronunciation": "DREEL-pah"
+    },
+    "marble": {
+        "enochian": "orri",
+        "pronunciation": "OH-ree"
+    },
+    "matrix": {
+        "enochian": "edmial",
+        "pronunciation": "ehd-MEE-ahl"
+    },
+    "midst": {
+        "enochian": "nothoa",
+        "pronunciation": "noh-THOH-ah"
+    },
+    "minister": {
+        "enochian": "carma",
+        "pronunciation": "KAHR-mah"
+    },
+    "moss": {
+        "enochian": "pila",
+        "pronunciation": "PEE-lah"
+    },
+    "mother": {
+        "enochian": "madimi",
+        "pronunciation": "mah-DEE-mee"
+    },
+    "mountains": {
+        "enochian": "adrpan",
+        "pronunciation": "ah-DER-pahn"
+    },
+    "mouth": {
+        "enochian": "butmon",
+        "pronunciation": "BOOT-mohn"
+    },
+    "numbers": {
+        "enochian": "cormpo",
+        "pronunciation": "KOHRM-poh"
+    },
+    "oak": {
+        "enochian": "paome",
+        "pronunciation": "pah-OH-meh"
+    },
+    "olive": {
+        "enochian": "pila",
+        "pronunciation": "PEE-lah"
+    },
+    "part": {
+        "enochian": "obza",
+        "pronunciation": "OHB-zah"
+    },
+    "people": {
+        "enochian": "els",
+        "pronunciation": "els"
+    },
+    "perfume": {
+        "enochian": "prge",
+        "pronunciation": "PAR-jeh"
+    },
+    "pillars": {
+        "enochian": "nazarth",
+        "pronunciation": "NAH-zahrth"
+    },
+    "plants": {
+        "enochian": "sor",
+        "pronunciation": "sohr"
+    },
+    "pour": {
+        "enochian": "var",
+        "pronunciation": "vahr"
+    },
+    "praises": {
+        "enochian": "ecrin",
+        "pronunciation": "EH-kreen"
+    },
+    "province": {
+        "enochian": "vonph",
+        "pronunciation": "vohnf"
+    },
+    "provinces": {
+        "enochian": "vonph",
+        "pronunciation": "vohnf"
+    },
+    "purpose": {
+        "enochian": "marb",
+        "pronunciation": "mahrb"
+    },
+    "raise": {
+        "enochian": "torzu",
+        "pronunciation": "TOHR-zoo"
+    },
+    "raised": {
+        "enochian": "torzu",
+        "pronunciation": "TOHR-zoo"
+    },
+    "remain": {
+        "enochian": "faorgt",
+        "pronunciation": "fah-OHR-get"
+    },
+    "remnant": {
+        "enochian": "obza",
+        "pronunciation": "OHB-zah"
+    },
+    "repent": {
+        "enochian": "moooah",
+        "pronunciation": "moh-OH-oh-ah"
+    },
+    "saith": {
+        "enochian": "gohu",
+        "pronunciation": "GO-hoo"
+    },
+    "scourge": {
+        "enochian": "vonph",
+        "pronunciation": "vohnf"
+    },
+    "seats": {
+        "enochian": "adrpan",
+        "pronunciation": "ah-DER-pahn"
+    },
+    "shaking": {
+        "enochian": "zacar",
+        "pronunciation": "ZAH-kahr"
+    },
+    "shew": {
+        "enochian": "odzo",
+        "pronunciation": "OHD-zoh"
+    },
+    "sink": {
+        "enochian": "drix",
+        "pronunciation": "dreeks"
+    },
+    "skies": {
+        "enochian": "piripsol",
+        "pronunciation": "pee-REEP-sohl"
+    },
+    "sleeve": {
+        "enochian": "limlal",
+        "pronunciation": "LEEM-lahl"
+    },
+    "smoke": {
+        "enochian": "vonsarg",
+        "pronunciation": "vohn-SAHRG"
+    },
+    "south": {
+        "enochian": "babage",
+        "pronunciation": "bah-BAH-jeh"
+    },
+    "steward": {
+        "enochian": "carma",
+        "pronunciation": "KAHR-mah"
+    },
+    "sting": {
+        "enochian": "vonph",
+        "pronunciation": "vohnf"
+    },
+    "stones": {
+        "enochian": "orri",
+        "pronunciation": "OH-ree"
+    },
+    "stranger": {
+        "enochian": "g",
+        "pronunciation": "gee"
+    },
+    "strangers": {
+        "enochian": "g",
+        "pronunciation": "gee"
+    },
+    "sulfur": {
+        "enochian": "salbrox",
+        "pronunciation": "SAHL-brohks"
+    },
+    "swear": {
+        "enochian": "surzas",
+        "pronunciation": "SOOR-zahs"
+    },
+    "sword": {
+        "enochian": "napta",
+        "pronunciation": "NAHP-tah"
+    },
+    "swords": {
+        "enochian": "napta",
+        "pronunciation": "NAHP-tah"
+    },
+    "tartar": {
+        "enochian": "salbrox",
+        "pronunciation": "SAHL-brohks"
+    },
+    "teeth": {
+        "enochian": "vgeg",
+        "pronunciation": "vuh-GEG"
+    },
+    "theirs": {
+        "enochian": "toatar",
+        "pronunciation": "toh-AH-tahr"
+    },
+    "thunders": {
+        "enochian": "coronzon",
+        "pronunciation": "koh-ROHN-zohn"
+    },
+    "underneath": {
+        "enochian": "oroch",
+        "pronunciation": "OH-rohk"
+    },
+    "vessels": {
+        "enochian": "edmial",
+        "pronunciation": "ehd-MEE-ahl"
+    },
+    "vial": {
+        "enochian": "edmial",
+        "pronunciation": "ehd-MEE-ahl"
+    },
+    "voices": {
+        "enochian": "bialo",
+        "pronunciation": "bee-AH-loh"
+    },
+    "vow": {
+        "enochian": "surzas",
+        "pronunciation": "SOOR-zahs"
+    },
+    "walk": {
+        "enochian": "lusdan",
+        "pronunciation": "LOOS-dahn"
+    },
+    "wall": {
+        "enochian": "nazarth",
+        "pronunciation": "NAH-zahrth"
+    },
+    "west": {
+        "enochian": "sobol",
+        "pronunciation": "SOH-bohl"
+    },
+    "window": {
+        "enochian": "hubar",
+        "pronunciation": "HOO-bahr"
+    },
+    "wine": {
+        "enochian": "sn",
+        "pronunciation": "sen"
+    },
+    "winds": {
+        "enochian": "ziren",
+        "pronunciation": "zee-REN"
+    },
+    "woe": {
+        "enochian": "vonph",
+        "pronunciation": "vohnf"
+    },
+    "wonders": {
+        "enochian": "micalzo",
+        "pronunciation": "mee-KAHL-zoh"
+    },
+    "work": {
+        "enochian": "marb",
+        "pronunciation": "mahrb"
+    },
+    "worms": {
+        "enochian": "toman",
+        "pronunciation": "TOH-mahn"
+    },
+    "worshippers": {
+        "enochian": "boan",
+        "pronunciation": "BOH-ahn"
+    },
+    "yoke": {
+        "enochian": "tlb",
+        "pronunciation": "telb"
+    },
+    "yourselves": {
+        "enochian": "ils",
+        "pronunciation": "eels"
+    },
+    "un": {
+        "enochian": "un",
+        "pronunciation": "oon"
+    },
+    "pa": {
+        "enochian": "pa",
+        "pronunciation": "pah"
+    },
+    "pe": {
+        "enochian": "pe",
+        "pronunciation": "peh"
+    },
+    "veh": {
+        "enochian": "veh",
+        "pronunciation": "veh"
+    },
+    "gal": {
+        "enochian": "gal",
+        "pronunciation": "gahl"
+    },
+    "graph": {
+        "enochian": "graph",
+        "pronunciation": "grahf"
+    },
+    "or": {
+        "enochian": "or",
+        "pronunciation": "ohr"
+    },
+    "ged": {
+        "enochian": "ged",
+        "pronunciation": "ged"
+    },
+    "na": {
+        "enochian": "na",
+        "pronunciation": "nah"
+    },
+    "gon": {
+        "enochian": "gon",
+        "pronunciation": "gohn"
+    },
+    "ur": {
+        "enochian": "ur",
+        "pronunciation": "oor"
+    },
+    "tal": {
+        "enochian": "tal",
+        "pronunciation": "tahl"
+    },
+    "drun": {
+        "enochian": "drun",
+        "pronunciation": "droon"
+    },
+    "drux": {
+        "enochian": "drux",
+        "pronunciation": "drooks"
+    },
+    "med": {
+        "enochian": "med",
+        "pronunciation": "med"
+    },
+    "mals": {
+        "enochian": "mals",
+        "pronunciation": "mahls"
+    },
+    "ger": {
+        "enochian": "ger",
+        "pronunciation": "ger"
+    },
+    "don": {
+        "enochian": "don",
+        "pronunciation": "dohn"
+    },
+    "fam": {
+        "enochian": "fam",
+        "pronunciation": "fahm"
+    },
+    "gisg": {
+        "enochian": "gisg",
+        "pronunciation": "geesg"
+    },
+    "gis": {
+        "enochian": "gis",
+        "pronunciation": "gees"
+    },
+    "van": {
+        "enochian": "van",
+        "pronunciation": "vahn"
+    },
+    "pal": {
+        "enochian": "pal",
+        "pronunciation": "pahl"
+    },
+    "ceph": {
+        "enochian": "ceph",
+        "pronunciation": "sef"
+    }
 }

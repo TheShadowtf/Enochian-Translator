@@ -29,26 +29,42 @@
 // Types
 // ----------------------------------------------------------------
 
+export interface DictionaryEntryRaw {
+  enochian: string;
+  pronunciation: string;
+}
+
 export interface DictionaryEntry {
   english: string;
   enochian: string;
+  pronunciation?: string;
 }
 
 // ----------------------------------------------------------------
 // In-memory dictionary (populated by loadDictionary on either runtime)
 // ----------------------------------------------------------------
 
-let dict: Record<string, string> = {};
+let dict: Record<string, DictionaryEntryRaw> = {};
 
 // Sanitize: strip any value containing non-ASCII characters (the source
 // JSON has at least one corrupt entry — "sun": "r華"). Keep only entries
 // whose Enochian value is plain ASCII letters.
-function sanitize(d: Record<string, string>): Record<string, string> {
-  const out: Record<string, string> = {};
+function sanitize(d: Record<string, any>): Record<string, DictionaryEntryRaw> {
+  const out: Record<string, DictionaryEntryRaw> = {};
   for (const [k, v] of Object.entries(d)) {
-    if (typeof v !== "string") continue;
-    if (/^[a-zA-Z]+$/.test(v)) {
-      out[k.toLowerCase().trim()] = v;
+    if (typeof v === "string") {
+      // Legacy flat string format
+      if (/^[a-zA-Z]+$/.test(v)) {
+        out[k.toLowerCase().trim()] = { enochian: v, pronunciation: "" };
+      }
+    } else if (v && typeof v === "object" && typeof v.enochian === "string") {
+      // New format: { enochian, pronunciation }
+      if (/^[a-zA-Z]+$/.test(v.enochian)) {
+        out[k.toLowerCase().trim()] = {
+          enochian: v.enochian,
+          pronunciation: v.pronunciation || "",
+        };
+      }
     }
   }
   return out;
@@ -58,7 +74,7 @@ function sanitize(d: Record<string, string>): Record<string, string> {
 // Indexes
 // ----------------------------------------------------------------
 
-let englishIndex: Map<string, string> = new Map();
+let englishIndex: Map<string, DictionaryEntryRaw> = new Map();
 /**
  * Reverse index: enochian(upper) -> array of ALL english keys that map
  * to it. Multiple English keys can share the same Enochian value (e.g.
@@ -73,9 +89,9 @@ function buildIndexes() {
   englishIndex = new Map();
   enochianIndex = new Map();
   multiWordKeys = [];
-  for (const [eng, eno] of Object.entries(dict)) {
-    englishIndex.set(eng, eno);
-    const eok = eno.toUpperCase();
+  for (const [eng, entry] of Object.entries(dict)) {
+    englishIndex.set(eng, entry);
+    const eok = entry.enochian.toUpperCase();
     if (!enochianIndex.has(eok)) enochianIndex.set(eok, []);
     enochianIndex.get(eok)!.push(eng);
     if (eng.includes(" ")) multiWordKeys.push(eng);
@@ -100,7 +116,7 @@ function buildIndexes() {
 // Public API
 // ----------------------------------------------------------------
 
-export function lookupEnglish(phrase: string): string | undefined {
+export function lookupEnglish(phrase: string): DictionaryEntryRaw | undefined {
   return englishIndex.get(phrase.toLowerCase().trim());
 }
 
@@ -137,9 +153,10 @@ export function multiWordEnglishKeys(): string[] {
 }
 
 export function allEntries(): DictionaryEntry[] {
-  return Object.entries(dict).map(([english, enochian]) => ({
+  return Object.entries(dict).map(([english, entry]) => ({
     english,
-    enochian,
+    enochian: entry.enochian,
+    pronunciation: entry.pronunciation,
   }));
 }
 
@@ -199,7 +216,9 @@ export function ensureDictionaryLoaded(): Promise<void> {
     return Promise.resolve();
   }
   if (clientLoadPromise) return clientLoadPromise;
-  clientLoadPromise = fetch("/complete_enochian_dictionary.json")
+  // Use a cache-buster query parameter to force the browser to fetch the
+  // latest version of the JSON file, ensuring the new alphabet entries are loaded.
+  clientLoadPromise = fetch("/complete_enochian_dictionary.json?v=" + Date.now())
     .then((r) => {
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       return r.json();

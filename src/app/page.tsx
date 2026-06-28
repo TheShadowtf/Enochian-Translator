@@ -60,6 +60,7 @@ function GlyphSvg({ html, className }: { html: string; className?: string }) {
 }
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
   const [direction, setDirection] = useState<Direction>("en->eo");
   const [input, setInput] = useState(
     "Alice, the angels gather out of the highest god"
@@ -69,6 +70,13 @@ export default function Home() {
   const deferredDictFilter = useDeferredValue(dictFilter);
   const [dictLoaded, setDictLoaded] = useState(false);
   const [dictVersion, setDictVersion] = useState(0);
+
+  // On the client, fetch the JSON dictionary from /complete_enochian_dictionary.json
+  // before allowing translation. On the server the dict is loaded synchronously
+  // by the dictionary module, so this is a no-op there.
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // On the client, fetch the JSON dictionary from /complete_enochian_dictionary.json
   // before allowing translation. On the server the dict is loaded synchronously
@@ -88,17 +96,15 @@ export default function Home() {
 
   // Re-run self-test whenever the dictionary reloads.
   const selfTest = useMemo(() => {
-    if (!dictLoaded && typeof window !== "undefined") return null;
+    if (!dictLoaded) return null;
     return runSelfTest();
-     
   }, [dictLoaded, dictVersion]);
 
   // Live translation (recomputed whenever input, direction, or dict changes).
   const result = useMemo(() => {
-    if (!dictLoaded && typeof window !== "undefined") return null;
+    if (!dictLoaded) return null;
     if (!deferredInput.trim()) return null;
     return translate(deferredInput, direction);
-     
   }, [deferredInput, direction, dictLoaded, dictVersion]);
 
   const dictionary = useMemo(() => {
@@ -132,7 +138,9 @@ export default function Home() {
   const dictCount = dictionarySize();
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    // Suppress hydration warnings on the root element — the dictionary-driven
+    // content is client-only and may legitimately differ from the SSR pass.
+    <div className="min-h-screen flex flex-col bg-background" suppressHydrationWarning>
       {/* ---------- HERO HEADER ---------- */}
       <header className="parchment-card border-b border-burgundy/20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 text-center">
@@ -453,12 +461,19 @@ function OutputDisplay({ result }: { result: TranslationResult }) {
         <Badge variant="outline" className="border-gold/50 text-gold">
           {result.fallbacks} phonetic fallback{result.fallbacks === 1 ? "" : "s"}
         </Badge>
-        {result.englishOutput && (
-          <Badge variant="outline" className="border-burgundy/30 text-ink-soft">
-            English output: <span className="font-mono ml-1">{result.englishOutput}</span>
-          </Badge>
-        )}
       </div>
+
+      {/* English Output (for eo->en) */}
+      {result.englishOutput !== undefined && (
+        <div>
+          <div className="text-xs uppercase tracking-wider text-ink-soft mb-1">
+            English Translation
+          </div>
+          <div className="bg-white/50 border border-burgundy/20 rounded-md p-3 font-mono text-lg text-ink break-words">
+            {result.englishOutput || "—"}
+          </div>
+        </div>
+      )}
 
       {/* Step 1: Latin output */}
       <div>
@@ -469,6 +484,18 @@ function OutputDisplay({ result }: { result: TranslationResult }) {
           {result.latinOutput || "—"}
         </div>
       </div>
+
+      {/* Pronunciation Output */}
+      {result.direction === "en->eo" && result.pronunciationOutput && (
+        <div>
+          <div className="text-xs uppercase tracking-wider text-ink-soft mb-1">
+            Pronunciation
+          </div>
+          <div className="bg-white/50 border border-burgundy/20 rounded-md p-3 font-mono text-lg text-ink break-words">
+            <span className="pronunciation">{result.pronunciationOutput}</span>
+          </div>
+        </div>
+      )}
 
       {/* Step 2: Glyph output */}
       <div>
