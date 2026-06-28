@@ -155,7 +155,7 @@ export default function Home() {
             letter-by-letter spoken Enochian letter-name transliteration
             (e.g. &ldquo;sent&rdquo; → &ldquo;Fam Graph Drux Gis&rdquo;).
             Two-step output: Latinised Enochian + traditional Dee-Kelley glyphs
-            (rendered as inline SVG).
+            (rendered as PNGs).
           </p>
           <div className="ornament-divider mt-6">
             <GlyphSvg html={latinToGlyphString("CDR", 20)} className="text-gold" />
@@ -304,7 +304,7 @@ export default function Home() {
                 Traditional Enochian Glyphs
               </CardTitle>
               <p className="text-xs text-ink-soft mt-1">
-                Traditional Dee-Kelley letterforms rendered as inline SVG.
+                Traditional Dee-Kelley letterforms rendered as PNGs.
                 Each Latin letter becomes its spoken Enochian letter name.
                 Hover any glyph for details.
               </p>
@@ -327,7 +327,7 @@ export default function Home() {
                       </TooltipTrigger>
                       <TooltipContent className="bg-ink text-parchment border-burgundy/40">
                         <div className="text-xs">
-                          <div><strong>{g.name}</strong> — SVG glyph <code>{g.id}</code></div>
+                          <div><strong>{g.name}</strong> — PNG glyph <code>{g.id}</code></div>
                           <div>Cluster: {g.cluster.join(" / ")}</div>
                         </div>
                       </TooltipContent>
@@ -473,7 +473,7 @@ function OutputDisplay({ result }: { result: TranslationResult }) {
       {/* Step 2: Glyph output */}
       <div>
         <div className="text-xs uppercase tracking-wider text-ink-soft mb-1">
-          Step 2 — Traditional Enochian Glyphs (inline SVG)
+          Step 2 — Traditional Enochian Glyphs (PNGs)
         </div>
         <div className="bg-white/50 border border-burgundy/20 rounded-md p-4 text-burgundy break-words text-center min-h-[80px] flex items-center justify-center flex-wrap gap-1">
           {result.glyphOutput ? (
@@ -575,7 +575,7 @@ function SelfTestBlock({
       </div>
       <div className="bg-white/50 border border-burgundy/20 rounded-md p-3">
         <div className="text-[10px] uppercase tracking-wider text-ink-soft mb-1">
-          Step 2: Traditional Enochian glyphs (SVG)
+          Step 2: Traditional Enochian glyphs (PNGs)
         </div>
         <div className="text-burgundy text-center min-h-[60px] flex items-center justify-center flex-wrap gap-1">
           {result.glyphOutput ? (
