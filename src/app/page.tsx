@@ -28,7 +28,7 @@ type Direction = "en->eo" | "eo->en";
 
 const EXAMPLES: Record<Direction, string[]> = {
   "en->eo": [
-    "Denisa, the voices are saying to talk to you",
+    "Alice, the angels gather out of the highest god",
     "I am the one who god sent",
     "holy angel",
     "the righteous angels",
@@ -62,7 +62,7 @@ function GlyphSvg({ html, className }: { html: string; className?: string }) {
 export default function Home() {
   const [direction, setDirection] = useState<Direction>("en->eo");
   const [input, setInput] = useState(
-    "Denisa, the voices are saying to talk to you"
+    "Alice, the angels gather out of the highest god"
   );
   const deferredInput = useDeferredValue(input);
   const [dictFilter, setDictFilter] = useState("");
@@ -273,8 +273,8 @@ export default function Home() {
             </CardHeader>
             <CardContent className="space-y-5">
               <SelfTestBlock
-                title="Test 1 — EN→EO — “Denisa, the voices are saying to talk to you”"
-                blurb="‘Denisa’ is NOT in the JSON dictionary → falls back to spoken letter names: D=Gal, e=Graph, n=Drux, i=Gon, s=Fam, a=Un → ‘Gal Graph Drux Gon Fam Un’. Then the multi-word phrase matcher kicks in for ‘the voices’→BIALO, ‘are saying’→GOHULIM, ‘to talk’→THIL, ‘to you’→NONCI."
+                title="Test 1 — EN→EO — “Alice, the angels gather out of the highest god”"
+                blurb="‘Alice’ is NOT in the JSON dictionary → falls back to spoken letter names: A=Un, l=Ur, i=Gon, c=Veh, e=Graph → ‘Un Ur Gon Veh Graph’. Then the multi-word phrase matcher kicks in for ‘out of’→HE, ‘the highest god’→IAIDA, while ‘the’, ‘angels’, and ‘gather’ are matched as single words."
                 result={selfTest.test1}
               />
               <Separator className="bg-burgundy/20" />
@@ -286,7 +286,7 @@ export default function Home() {
               <Separator className="bg-burgundy/20" />
               <SelfTestBlock
                 title="Test 3 — EO→EN — Reverse reconstruction + primary-phrase lookup"
-                blurb="Reverse direction: ‘Gal Graph Drux Gon Fam Un’ is 6 consecutive letter names → collapsed back to ‘denisa’. ‘Veh Graph Graph Mals’ → ‘ceep’. BIALO/GOHULIM/THIL/NONCI pull the PRIMARY FULL phrase from the JSON (‘the voices’, ‘are saying’, ‘to talk’, ‘to you’) — NOT the partial single-word matches."
+                blurb="Reverse direction: ‘Un Ur Gon Veh Graph’ is 5 consecutive letter names → collapsed back to ‘alice’. ‘Veh Graph Graph Mals’ → ‘ceep’. HE/IAIDA pull the PRIMARY FULL phrase from the JSON (‘out of’, ‘the highest god’)."
                 result={selfTest.test3Reverse}
                 showEnglish
               />

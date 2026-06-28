@@ -1,5 +1,7 @@
 # Enochian Translator
 
+**Live Demo:** [https://enotranslator.netlify.app/](https://enotranslator.netlify.app/)
+
 A bidirectional English ↔ Enochian translator built with Next.js 16, TypeScript, and Tailwind CSS. Reads exclusively from a user-provided JSON dictionary. Traditional Dee-Kelley Enochian letterforms are rendered as inline SVG.
 
 ## Quick Start
@@ -65,10 +67,10 @@ q=Ger, r=Don, s=Fam, t=Gis, u=Van, v=Van, w=Van, x=Pal,
 y=Gon, z=Fam
 ```
 
-Example: `"Denisa"` (not in dict) → `"Gal Graph Drux Gon Fam Un"`
+Example: `"Alice"` (not in dict) → `"Un Ur Gon Veh Graph"`
 
 ### 4. Reverse Direction (Enochian → English)
-- Consecutive spoken letter names are collapsed back into a single English word. `"Gal Graph Drux Gon Fam Un"` → `"denisa"`
+- Consecutive spoken letter names are collapsed back into a single English word. `"Un Ur Gon Veh Graph"` → `"alice"`
 - Reverse dictionary lookup returns the **primary full phrase** (longest multi-word English key). `BIALO` → `"the voices"` (not `"voices"`).
 
 ### 5. Traditional Dee-Kelley SVG Glyphs
@@ -83,7 +85,7 @@ The Unicode Enochian block (U+10480–U+104A9) does not contain the correct trad
 ### `POST /api/translate`
 ```json
 // Request body
-{ "input": "Denisa, the voices are saying to talk to you", "direction": "en->eo" }
+{ "input": "Alice, the angels gather out of the highest god", "direction": "en->eo" }
 // direction: "en->eo" or "eo->en"
 
 // Response (200)
@@ -108,9 +110,9 @@ Dumps the entire loaded dictionary.
 
 The app includes three self-tests visible on the homepage:
 
-1. **EN→EO** — `"Denisa, the voices are saying to talk to you"` → `Gal Graph Drux Gon Fam Un BIALO GOHULIM THIL NONCI` (4 dict, 1 fallback)
-2. **EN→EO** — `"I am the one who god sent"` → `OL ZIR A L DS IAD DRIX` (7 dict, 0 fallback — proves dictionary takes priority over fallback)
-3. **EO→EN** — `"Gal Graph Drux Gon Fam Un BIALO Veh Graph Graph Mals GOHULIM THIL NONCI"` → `denisa the voices ceep are saying to talk to you` (4 dict, 2 fallback — proves phonetic reconstruction + primary-phrase lookup)
+1. **EN→EO** — `"Alice, the angels gather out of the highest god"` → `Un Ur Gon Veh Graph A C COMSELHA HE IAIDA` (5 dict, 1 fallback)
+2. **EN→EO** — `"I am the one who god sent"` → `OL ZIR A L DS IAD DRIX` (7 dict, 0 fallback)
+3. **EO→EN** — `"Un Ur Gon Veh Graph A C COMSELHA HE IAIDA Veh Graph Graph Mals"` → `alice the angels gather out of the highest god ceep` (5 dict, 2 fallback — proves phonetic reconstruction + primary-phrase lookup)
 
 ## Extending the Dictionary
 

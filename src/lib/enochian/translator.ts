@@ -236,7 +236,7 @@ export function translateEnglishToEnochian(input: string): TranslationResult {
 //        un->a, pe->b, veh->c, gal->d, graph->e, or->f, ged->g,
 //        na->h, gon->i, ur->l, tal->m, drux->n, med->o, mals->p,
 //        ger->q, don->r, fam->s, gis->t, van->u, pal->x
-//      Example: "Gal Graph Drux Gon Fam Un" -> "denisa"
+//      Example: "Un Ur Gon Veh Graph" -> "alice"
 //               "Veh Graph Graph Mals"      -> "ceep"
 //
 //   3. If a token is neither a dictionary word nor a letter name,
@@ -244,7 +244,7 @@ export function translateEnglishToEnochian(input: string): TranslationResult {
 //      last resort.
 //
 //   4. NO auto-capitalization of the output. The user's expected test
-//      output starts with lowercase "denisa", so we preserve case as
+//      output starts with lowercase "alice", so we preserve case as
 //      emitted by the rules above (dictionary phrases come from the
 //      JSON in their stored case; reconstructed words are lowercase).
 
@@ -346,7 +346,8 @@ export function translateEnochianToEnglish(input: string): TranslationResult {
     i++;
   }
 
-  // NOTE: no auto-capitalization — user spec test expects lowercase "denisa".
+  // NOTE: no auto-capitalization — user spec test expects lowercase "alice".
+  // Dictionary phrase translations are preserved in their exact JSON case.
   const englishOutput = englishPieces.join(" ");
 
   return {
@@ -390,13 +391,14 @@ export function dictionaryReady(): boolean {
  * reconstructs English words from spelled-out letter names AND pulls
  * the primary full phrase from the JSON.
  *
- * Forward Test 1: "Denisa, the voices are saying to talk to you"
- *   - "Denisa"     -> NOT in dictionary -> fallback -> "Gal Graph Drux Gon Fam Un"
- *   - "the voices" -> dictionary phrase -> "BIALO"
- *   - "are saying" -> dictionary phrase -> "GOHULIM"
- *   - "to talk"    -> dictionary phrase -> "THIL"
- *   - "to you"     -> dictionary phrase -> "NONCI"
- *   Expected Step 1: "Gal Graph Drux Gon Fam Un BIALO GOHULIM THIL NONCI"
+ * Forward Test 1: "Alice, the angels gather out of the highest god"
+ *   - "Alice"     -> NOT in dictionary -> fallback -> "Un Ur Gon Veh Graph"
+ *   - "the"       -> dictionary word -> "A"
+ *   - "angels"    -> dictionary word -> "C"
+ *   - "gather"    -> dictionary word -> "COMSELHA"
+ *   - "out of"    -> dictionary phrase -> "HE"
+ *   - "the highest god" -> dictionary phrase -> "IAIDA"
+ *   Expected Step 1: "Un Ur Gon Veh Graph A C COMSELHA HE IAIDA"
  *
  * Forward Test 2: "I am the one who god sent"
  *   - "i"    -> "OL"
@@ -410,14 +412,15 @@ export function dictionaryReady(): boolean {
  *   Expected Step 1: "OL ZIR A L DS IAD DRIX"
  *
  * REVERSE Test 3 (per user spec v4):
- *   Input:  "Gal Graph Drux Gon Fam Un BIALO Veh Graph Graph Mals GOHULIM THIL NONCI"
- *   - "Gal Graph Drux Gon Fam Un"  -> 6 consecutive letter names -> "denisa"
- *   - "BIALO"                       -> dictionary reverse lookup -> "the voices"
+ *   Input:  "Un Ur Gon Veh Graph A C COMSELHA HE IAIDA Veh Graph Graph Mals"
+ *   - "Un Ur Gon Veh Graph"         -> 5 consecutive letter names -> "alice"
+ *   - "A"                           -> dictionary reverse lookup -> "the"
+ *   - "C"                           -> dictionary reverse lookup -> "angels"
+ *   - "COMSELHA"                    -> dictionary reverse lookup -> "gather"
+ *   - "HE"                          -> dictionary reverse lookup -> "out of"
+ *   - "IAIDA"                       -> dictionary reverse lookup -> "the highest god"
  *   - "Veh Graph Graph Mals"        -> 4 consecutive letter names -> "ceep"
- *   - "GOHULIM"                     -> dictionary reverse lookup -> "are saying"
- *   - "THIL"                        -> dictionary reverse lookup -> "to talk"
- *   - "NONCI"                       -> dictionary reverse lookup -> "to you"
- *   Expected English output: "denisa the voices ceep are saying to talk to you"
+ *   Expected English output: "alice the angels gather out of the highest god ceep"
  */
 export function runSelfTest(): {
   test1: TranslationResult;
@@ -426,11 +429,11 @@ export function runSelfTest(): {
 } {
   return {
     test1: translateEnglishToEnochian(
-      "Denisa, the voices are saying to talk to you"
+      "Alice, the angels gather out of the highest god"
     ),
     test2: translateEnglishToEnochian("I am the one who god sent"),
     test3Reverse: translateEnochianToEnglish(
-      "Gal Graph Drux Gon Fam Un BIALO Veh Graph Graph Mals GOHULIM THIL NONCI"
+      "Un Ur Gon Veh Graph A C COMSELHA HE IAIDA Veh Graph Graph Mals"
     ),
   };
 }
