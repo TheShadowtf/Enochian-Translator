@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <style>
+    .stroke {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .fill {
+      fill: currentColor;
+      stroke: none;
+    }
+  </style>
+  <!-- Pa: Trident/fork shape - vertical stem with two diverging strokes at top -->
+  <path d="M 50 95 L 50 40" class="stroke"/>
+  <path d="M 50 40 Q 30 20 20 15" class="stroke"/>
+  <path d="M 50 40 Q 70 20 80 15" class="stroke"/>
+  <!-- Small crossbar near the fork point -->
+  <path d="M 35 50 L 65 50" class="stroke"/>
+</svg>

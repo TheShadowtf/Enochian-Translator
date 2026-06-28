@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <style>
+    .stroke {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .fill {
+      fill: currentColor;
+      stroke: none;
+    }
+  </style>
+  <!-- Veh: Like a capital B - vertical stroke with two rounded bumps -->
+  <path d="M 30 15 L 30 95" class="stroke"/>
+  <path d="M 30 15 Q 70 15 70 35 Q 70 55 30 55" class="stroke"/>
+  <path d="M 30 55 Q 75 55 75 75 Q 75 95 30 95" class="stroke"/>
+</svg>

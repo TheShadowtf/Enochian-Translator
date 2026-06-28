@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <style>
+    .stroke {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .fill {
+      fill: currentColor;
+      stroke: none;
+    }
+  </style>
+  <!-- Tal: Cursive M-like flowing shape with a descending tail -->
+  <path d="M 18 30 Q 30 15 42 35 Q 48 50 55 35 Q 62 15 75 30" class="stroke"/>
+  <path d="M 75 30 Q 68 55 62 75 Q 58 90 72 95" class="stroke"/>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <style>
+    .stroke {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .fill {
+      fill: currentColor;
+      stroke: none;
+    }
+  </style>
+  <!-- Drux: Angular N-like shape with curved left tail -->
+  <path d="M 30 95 Q 22 72 30 55 L 30 18" class="stroke"/>
+  <path d="M 30 18 L 65 55" class="stroke"/>
+  <path d="M 65 18 L 65 95" class="stroke"/>
+</svg>
